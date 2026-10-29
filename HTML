@@ -1,1 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Majorie - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
 
+        body {
+            /* Static Background Image */
+            background-image: url('bc2.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-color: #000000;
+            
+            color: #f8fafc;
+            min-height: 100vh;
+        }
+
+        /* Sticky Navigation Bar */
+        nav {
+            position: sticky;
+            top: 0;
+            background-color: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 15px 20px;
+            z-index: 1000;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.9);
+            border-bottom: 1px solid #dc2626;
+        }
+
+        .nav-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .nav-btn {
+            background-color: #000000;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px 16px;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 500;
+            border: 1px solid #dc2626;
+            transition: all 0.3s ease;
+        }
+
+        .nav-btn:hover {
+            background-color: #dc2626;
+            color: #ffffff;
+            border-color: #ef4444;
+            box-shadow: 0 0 12px rgba(220, 38, 38, 0.6);
+            transform: translateY(-2px);
+        }
+
+        /* Sections na may solid black background at red border */
+        section {
+            min-height: 80vh;
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: 40px auto;
+            background-color: #000000;
+            border-radius: 10px;
+            border: 1px solid #dc2626;
+            box-shadow: 0 10px 30px rgba(220, 38, 38, 0.15);
+            scroll-margin-top: 90px; /* Para hindi matakpan ng navbar kapag pinindot */
+        }
+
+        /* --- STYLES PARA SA HOME SECTION --- */
+        .home-container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            padding: 20px;
+            min-height: 60vh;
+        }
+
+        .profile-img-box {
+            flex-shrink: 0;
+        }
+
+       .profile-img {
+            width: 180px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 50px / 80px;
+            border: 3px solid #dc2626;
+            box-shadow: 0 0 20px rgba(220, 38, 38, 0.5);
+        }
+
+        .home-text {
+            flex: 1;
+            min-width: 280px;
+        }
+
+        .home-text h1 {
+            font-size: 32px;
+            color: #ffffff;
+            margin-bottom: 8px;
+        }
+
+        .home-text h3 {
+            font-size: 18px;
+            color: #dc2626;
+            margin-bottom: 16px;
+            font-weight: 500;
+        }
+
+        .home-text p {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #cbd5e1;
+        }
+
+        /* --- DETAILED PROFILE CONTENT --- */
+        .profile-details {
+            padding: 0 20px;
+        }
+
+        .profile-details h2 {
+            color: #ef4444;
+            font-size: 24px;
+            margin-bottom: 25px;
+            border-bottom: 1px solid #1e293b;
+            padding-bottom: 10px;
+        }
+
+        .profile-category {
+            margin-bottom: 25px;
+        }
+
+        .profile-category h4 {
+            color: #ffffff;
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        .profile-category p {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #cbd5e1;
+        }
