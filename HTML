@@ -154,3 +154,151 @@
             line-height: 1.6;
             color: #cbd5e1;
         }
+
+        /* --- STYLES PARA SA SKILLS SECTION --- */
+        .skills-details {
+            padding: 0 20px;
+        }
+
+        .skills-details h2 {
+            color: #ef4444;
+            font-size: 24px;
+            margin-bottom: 25px;
+            border-bottom: 1px solid #1e293b;
+            padding-bottom: 10px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .skill-card {
+            background-color: rgba(10, 10, 10, 0.6);
+            border: 1px solid #dc2626;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 15px rgba(220, 38, 38, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(220, 38, 38, 0.25);
+            border-color: #ef4444;
+        }
+
+        .skill-card h4 {
+            color: #ffffff;
+            font-size: 18px;
+            margin-bottom: 12px;
+            border-bottom: 1px solid rgba(220, 38, 38, 0.3);
+            padding-bottom: 6px;
+        }
+
+        .skill-card ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .skill-card li {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #cbd5e1;
+            margin-bottom: 6px;
+            position: relative;
+            padding-left: 15px;
+        }
+
+        .skill-card li::before {
+            content: "•";
+            color: #dc2626;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        /* --- STYLES PARA SA CERTIFICATES SECTION --- */
+        .certificates-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .cert-card {
+            background-color: #0a0a0a;
+            border: 1px solid #dc2626;
+            border-radius: 8px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            box-shadow: 0 4px 15px rgba(220, 38, 38, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            
+            width: 500px;
+            height: 500px;
+            max-width: 100%; /* Responsive para sa maliliit na screen */
+        }
+
+        .cert-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(220, 38, 38, 0.4);
+            border-color: #ef4444;
+        }
+
+        .cert-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* Para hindi ma-distort ang PNG image */
+            display: block;
+        }
+
+        /* --- BUTTONS --- */
+        .btn-group {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 25px;
+        }
+
+        .btn-primary {
+            background-color: #dc2626;
+            color: #ffffff;
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 15px;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 10px rgba(220, 38, 38, 0.4);
+        }
+
+        .btn-primary:hover {
+            background-color: #ef4444;
+            transform: translateY(-3px);
+            box-shadow: 0 0 18px rgba(239, 68, 68, 0.8);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: #dc2626;
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 15px;
+            border: 2px solid #dc2626;
+            transition: all 0.3s ease;
+        }
+
+        .btn-secondary:hover {
+            background-color: rgba(220, 38, 38, 0.1);
+            color: #ef4444;
+            border-color: #ef4444;
+            transform: translateY(-3px);
+        }
